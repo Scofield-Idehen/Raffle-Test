@@ -2,7 +2,7 @@
 pragma solidity ^0.8.12;
 
 import {Test} from "forge-std/Test.sol";
-import {CollectOutput, ResponseTrap} from "../src/ResponseTrap.sol";
+import {ResponseTrap} from "../src/ResponseTrap.sol";
 
 // forge test --contracts ./test/ResponseTrap.t.sol -vvvv
 contract ResponseTrapTest is Test {
