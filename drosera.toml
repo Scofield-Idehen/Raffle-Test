@@ -1,15 +1,42 @@
-ethereum_rpc = "https://ethereum-holesky-rpc.publicnode.com"
+# ethereum_rpc = "https://ethereum-holesky-rpc.publicnode.com"
+# drosera_rpc = "https://seed-node.testnet.drosera.io"
+# eth_chain_id = 17000
+# drosera_address = "0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8"
+
+# [traps]
+
+# [traps.mytrap]
+# path = "out/HelloWorldTrap.sol/HelloWorldTrap.json"
+# response_contract = "0xdA890040Af0533D98B9F5f8FE3537720ABf83B0C"
+# response_function = "helloworld(string)"
+# cooldown_period_blocks = 33
+# min_number_of_operators = 1
+# max_number_of_operators = 2
+# block_sample_size = 10
+
+
+#0d5321bd27dcb87156722be7713b45ad03bca8bb7e23d021e0530a0efc5c65d1
+
+
+ethereum_rpc = "https://eth-holesky.g.alchemy.com/v2/7jl_hPvjjEmayZTegWpMuRt-tkVDjV7t"
 drosera_rpc = "https://seed-node.testnet.drosera.io"
 eth_chain_id = 17000
 drosera_address = "0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8"
+gas_price = 10000
+#drosera_address = "0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8"
 
 [traps]
 
-[traps.mytrap]
-path = "out/HelloWorldTrap.sol/HelloWorldTrap.json"
-response_contract = "0xdA890040Af0533D98B9F5f8FE3537720ABf83B0C"
-response_function = "helloworld(string)"
+[traps.hello_world]
+path = "out/HelloWorldTrap.sol/RaffleStuckTrap.json"
+response_contract = "0xeAc8BA109bC1A363d0739194dC91265637168370"
+response_function = "pause(uint256)"
 cooldown_period_blocks = 33
 min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 10
+
+private_trap = true
+eth_rpc_url = "https://eth-holesky.g.alchemy.com/v2/7jl_hPvjjEmayZTegWpMuRt-tkVDjV7t"
+whitelist = ["0xB3508231b2d4441cE2517C89D8B6b80d16Dd561C"]
+

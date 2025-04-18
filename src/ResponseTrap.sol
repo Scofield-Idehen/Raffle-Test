@@ -16,7 +16,7 @@ interface IResponseProtocol {
 contract ResponseTrap is ITrap {
     // Deployed on Holesky
     address private responseProtocol =
-        address(0x307C59D0dB3124Cd1C9f935285226D5622289BCD);
+        address(0x8975041f8fCB64FD903ab36e817F8b9660D63D52);
     uint256 private triggerAtBlockNumber = 0; // <---- Update this value to trigger the trap
 
     function collect() external view returns (bytes memory) {
