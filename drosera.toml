@@ -15,8 +15,6 @@
 # block_sample_size = 10
 
 
-#0d5321bd27dcb87156722be7713b45ad03bca8bb7e23d021e0530a0efc5c65d1
-
 
 ethereum_rpc = "https://eth-holesky.g.alchemy.com/v2/7jl_hPvjjEmayZTegWpMuRt-tkVDjV7t"
 drosera_rpc = "https://seed-node.testnet.drosera.io"
