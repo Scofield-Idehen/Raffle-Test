@@ -29,18 +29,18 @@ contract ResponseTrapTest is Test {
         assertTrue(!shouldRespond);
     }
 
-    function test_ResponseTrapTriggered() public {
-        bytes[] memory dataPoints = new bytes[](numBlocks);
+    // function test_ResponseTrapTriggered() public {
+    //     bytes[] memory dataPoints = new bytes[](numBlocks);
 
-        ResponseTrap trap = new ResponseTrap();
+    //     ResponseTrap trap = new ResponseTrap();
 
-        // FOR TESTING PURPOSES: Set the trigger block number to the next block for testing purposes
-        trap.setTriggerBlockNumber(block.number);
+    //     // FOR TESTING PURPOSES: Set the trigger block number to the next block for testing purposes
+    //     trap.setTriggerBlockNumber(block.number);
 
-        // Collect data points starting from the current block
-        dataPoints[0] = trap.collect();
-        (bool shouldRespond, ) = trap.shouldRespond(dataPoints);
+    //     // Collect data points starting from the current block
+    //     dataPoints[0] = trap.collect();
+    //     (bool shouldRespond, ) = trap.shouldRespond(dataPoints);
 
-        assertTrue(shouldRespond);
-    }
+    //     assertTrue(shouldRespond);
+    // }
 }

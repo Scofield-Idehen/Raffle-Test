@@ -16,7 +16,7 @@ interface IResponseProtocol {
 contract ResponseTrap is ITrap {
     // Deployed on Holesky
     address private responseProtocol =
-        address(0xdA890040Af0533D98B9F5f8FE3537720ABf83B0C);
+        address(0x307C59D0dB3124Cd1C9f935285226D5622289BCD);
     uint256 private triggerAtBlockNumber = 0; // <---- Update this value to trigger the trap
 
     function collect() external view returns (bytes memory) {
@@ -43,8 +43,5 @@ contract ResponseTrap is ITrap {
         return (false, bytes(""));
     }
 
-    // NOTE: For Testing: Set the block number to a specific block number in the future
-    function setTriggerBlockNumber(uint256 _blockNumber) external {
-        triggerAtBlockNumber = _blockNumber;
-    }
+    
 }

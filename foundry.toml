@@ -9,4 +9,5 @@ remappings = [
 
 [rpc_endpoints]
 mainnet = "https://eth.llamarpc.com"
+holesky="https://eth-holesky.g.alchemy.com/v2/7jl_hPvjjEmayZTegWpMuRt-tkVDjV7t"
 
